@@ -1,0 +1,27 @@
+# Secrets. config.json holds API keys; the rest are the other ways a key or
+# a credential reaches this project. Commit NONE of them.
+config.json
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# User database: password hashes + session tokens.
+users.db
+*.sqlite
+*.sqlite3
+
+# Per-run record — grows without bound and can contain prompt/answer text.
+traces/
+sessions/
+*.log
+
+# Build output / caches.
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.spec
+.DS_Store

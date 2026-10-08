@@ -1,0 +1,1 @@
+{"nodes":[{"id":"agent_1","kind":"agent","name":"agent","x":283,"y":91,"props":{}},{"id":"llm_2","kind":"llm","name":"llm","x":61,"y":40,"props":{}}],"edges":[{"src":"llm_2","dst":"agent_1","props":{}}],"state_schema":[],"storage":{},"type_defs":[]}

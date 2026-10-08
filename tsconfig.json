@@ -1,0 +1,24 @@
+{
+  "// why": [
+    "Node 24 runs TypeScript by STRIPPING types — it never type-checks. This file is",
+    "for the editor and for an optional `npm run typecheck`, which needs a tsc you",
+    "install yourself; nothing here is required to run or test the server.",
+    "erasableSyntaxOnly and verbatimModuleSyntax keep the source inside the subset",
+    "type-stripping accepts: no enum, no namespace, no decorators, and type-only",
+    "imports marked as such."
+  ],
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "lib": ["ES2023"],
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "scripts/**/*.ts"]
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetaAgent — web designer</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="bar">
+  <span class="brand">MetaAgent</span>
+  <input id="graph-name" class="name" value="Untitled" spellcheck="false"
+         aria-label="Agent name">
+  <span class="spacer"></span>
+  <button id="btn-new"      class="ghost" title="Start an empty graph">New</button>
+  <button id="btn-open"     class="ghost" title="Open a saved graph">Open…</button>
+  <button id="btn-upload"   class="ghost" title="Import a .mta bundle">Import .mta</button>
+  <button id="btn-save"     class="ghost" title="Save to the server (Ctrl+S)">Save</button>
+  <button id="btn-settings" class="ghost" title="Storage and custom state types">Graph…</button>
+  <button id="btn-merge"    class="ghost" title="Absorb another .mta into this graph">Merge…</button>
+  <button id="btn-review"   class="ghost" title="Deterministic design review">Review</button>
+  <span class="sep"></span>
+  <label class="pick" title="Emission backend">
+    <select id="target"><option value="python">Python</option><option value="ts">TypeScript</option></select>
+  </label>
+  <button id="btn-generate" class="primary" title="Generate the agent">Generate</button>
+  <input type="file" id="file-mta" accept=".mta" hidden>
+  <input type="file" id="file-merge" accept=".mta" hidden>
+</header>
+
+<main>
+  <!-- palette ------------------------------------------------------------ -->
+  <aside class="panel palette">
+    <input id="palette-search" class="search" placeholder="Search nodes…" spellcheck="false">
+    <div id="palette"></div>
+  </aside>
+
+  <!-- canvas -------------------------------------------------------------- -->
+  <section class="canvas-wrap">
+    <svg id="canvas" tabindex="0" aria-label="Graph canvas">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z"></path>
+        </marker>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="1" cy="1" r="1"></circle>
+        </pattern>
+      </defs>
+      <rect id="grid-bg" width="100%" height="100%" fill="url(#grid)"></rect>
+      <g id="viewport">
+        <g id="edges"></g>
+        <g id="nodes"></g>
+        <path id="linking" class="linking"></path>
+      </g>
+    </svg>
+    <div class="hint" id="canvas-hint">
+      <div class="card">
+        <h2>An empty canvas</h2>
+        <p>Drag a node from the palette, or start from a shape below.
+           Link two nodes by dragging from the right-hand dot of one onto another
+           &mdash; the trail turns green when the link is legal.
+           <br><kbd>Ctrl</kbd>+<kbd>Z</kbd> undoes, <kbd>Del</kbd> removes.</p>
+        <div class="starts">
+          <button data-start="minimal">
+            <span class="lede">Single agent</span>
+            <span class="sub">agent + llm &mdash; the smallest thing that runs</span>
+          </button>
+          <button data-start="tools">
+            <span class="lede">Agent with tools</span>
+            <span class="sub">adds a prompt and a tool file</span>
+          </button>
+          <button id="start-import">
+            <span class="lede">Import a .mta</span>
+            <span class="sub">open a graph you already have</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="zoom">
+      <button id="zoom-out" title="Zoom out">−</button>
+      <button id="zoom-fit" title="Fit to content">Fit</button>
+      <button id="zoom-in"  title="Zoom in">+</button>
+    </div>
+  </section>
+
+  <!-- inspector ----------------------------------------------------------- -->
+  <aside class="panel inspector">
+    <div class="tabs">
+      <button class="tab on"  data-tab="props">Properties</button>
+      <button class="tab"     data-tab="state">State</button>
+      <button class="tab"     data-tab="issues">Validation <span id="issue-count" class="pill"></span></button>
+    </div>
+    <div id="tab-props"  class="tab-body"></div>
+    <div id="tab-state"  class="tab-body" hidden></div>
+    <div id="tab-issues" class="tab-body" hidden></div>
+  </aside>
+</main>
+
+<footer class="status">
+  <span id="mode" class="chip" title="The runner this topology triggers">—</span>
+  <span id="status">loading schema…</span>
+  <span class="spacer"></span>
+  <span id="counts" class="muted"></span>
+</footer>
+
+<dialog id="dlg"><div id="dlg-body"></div></dialog>
+
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

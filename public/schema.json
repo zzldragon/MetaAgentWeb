@@ -1,0 +1,3531 @@
+{
+  "allowed_edges": [
+    [
+      "agent",
+      "agent"
+    ],
+    [
+      "agent",
+      "code"
+    ],
+    [
+      "agent",
+      "condition"
+    ],
+    [
+      "agent",
+      "debate"
+    ],
+    [
+      "agent",
+      "end"
+    ],
+    [
+      "agent",
+      "fanout"
+    ],
+    [
+      "agent",
+      "foreach"
+    ],
+    [
+      "agent",
+      "guardrail"
+    ],
+    [
+      "agent",
+      "hitl"
+    ],
+    [
+      "agent",
+      "http"
+    ],
+    [
+      "agent",
+      "join"
+    ],
+    [
+      "agent",
+      "llmstep"
+    ],
+    [
+      "agent",
+      "media"
+    ],
+    [
+      "agent",
+      "remote_worker"
+    ],
+    [
+      "agent",
+      "router"
+    ],
+    [
+      "agent",
+      "setstate"
+    ],
+    [
+      "agent",
+      "subgraph"
+    ],
+    [
+      "agent",
+      "template"
+    ],
+    [
+      "agent",
+      "while"
+    ],
+    [
+      "agent",
+      "workerpool"
+    ],
+    [
+      "code",
+      "agent"
+    ],
+    [
+      "code",
+      "code"
+    ],
+    [
+      "code",
+      "condition"
+    ],
+    [
+      "code",
+      "debate"
+    ],
+    [
+      "code",
+      "end"
+    ],
+    [
+      "code",
+      "fanout"
+    ],
+    [
+      "code",
+      "foreach"
+    ],
+    [
+      "code",
+      "guardrail"
+    ],
+    [
+      "code",
+      "hitl"
+    ],
+    [
+      "code",
+      "http"
+    ],
+    [
+      "code",
+      "join"
+    ],
+    [
+      "code",
+      "llmstep"
+    ],
+    [
+      "code",
+      "media"
+    ],
+    [
+      "code",
+      "remote_worker"
+    ],
+    [
+      "code",
+      "router"
+    ],
+    [
+      "code",
+      "setstate"
+    ],
+    [
+      "code",
+      "subgraph"
+    ],
+    [
+      "code",
+      "template"
+    ],
+    [
+      "code",
+      "while"
+    ],
+    [
+      "code",
+      "workerpool"
+    ],
+    [
+      "condition",
+      "agent"
+    ],
+    [
+      "condition",
+      "code"
+    ],
+    [
+      "condition",
+      "condition"
+    ],
+    [
+      "condition",
+      "debate"
+    ],
+    [
+      "condition",
+      "end"
+    ],
+    [
+      "condition",
+      "fanout"
+    ],
+    [
+      "condition",
+      "foreach"
+    ],
+    [
+      "condition",
+      "guardrail"
+    ],
+    [
+      "condition",
+      "hitl"
+    ],
+    [
+      "condition",
+      "http"
+    ],
+    [
+      "condition",
+      "join"
+    ],
+    [
+      "condition",
+      "llmstep"
+    ],
+    [
+      "condition",
+      "media"
+    ],
+    [
+      "condition",
+      "remote_worker"
+    ],
+    [
+      "condition",
+      "router"
+    ],
+    [
+      "condition",
+      "setstate"
+    ],
+    [
+      "condition",
+      "subgraph"
+    ],
+    [
+      "condition",
+      "template"
+    ],
+    [
+      "condition",
+      "while"
+    ],
+    [
+      "condition",
+      "workerpool"
+    ],
+    [
+      "debate",
+      "agent"
+    ],
+    [
+      "debate",
+      "code"
+    ],
+    [
+      "debate",
+      "condition"
+    ],
+    [
+      "debate",
+      "debate"
+    ],
+    [
+      "debate",
+      "end"
+    ],
+    [
+      "debate",
+      "fanout"
+    ],
+    [
+      "debate",
+      "foreach"
+    ],
+    [
+      "debate",
+      "guardrail"
+    ],
+    [
+      "debate",
+      "hitl"
+    ],
+    [
+      "debate",
+      "http"
+    ],
+    [
+      "debate",
+      "join"
+    ],
+    [
+      "debate",
+      "llmstep"
+    ],
+    [
+      "debate",
+      "media"
+    ],
+    [
+      "debate",
+      "remote_worker"
+    ],
+    [
+      "debate",
+      "router"
+    ],
+    [
+      "debate",
+      "setstate"
+    ],
+    [
+      "debate",
+      "subgraph"
+    ],
+    [
+      "debate",
+      "template"
+    ],
+    [
+      "debate",
+      "while"
+    ],
+    [
+      "debate",
+      "workerpool"
+    ],
+    [
+      "eval",
+      "agent"
+    ],
+    [
+      "eval",
+      "router"
+    ],
+    [
+      "eval",
+      "workerpool"
+    ],
+    [
+      "fanout",
+      "agent"
+    ],
+    [
+      "fanout",
+      "code"
+    ],
+    [
+      "fanout",
+      "condition"
+    ],
+    [
+      "fanout",
+      "debate"
+    ],
+    [
+      "fanout",
+      "end"
+    ],
+    [
+      "fanout",
+      "fanout"
+    ],
+    [
+      "fanout",
+      "foreach"
+    ],
+    [
+      "fanout",
+      "guardrail"
+    ],
+    [
+      "fanout",
+      "hitl"
+    ],
+    [
+      "fanout",
+      "http"
+    ],
+    [
+      "fanout",
+      "join"
+    ],
+    [
+      "fanout",
+      "llmstep"
+    ],
+    [
+      "fanout",
+      "media"
+    ],
+    [
+      "fanout",
+      "remote_worker"
+    ],
+    [
+      "fanout",
+      "router"
+    ],
+    [
+      "fanout",
+      "setstate"
+    ],
+    [
+      "fanout",
+      "subgraph"
+    ],
+    [
+      "fanout",
+      "template"
+    ],
+    [
+      "fanout",
+      "while"
+    ],
+    [
+      "fanout",
+      "workerpool"
+    ],
+    [
+      "foreach",
+      "agent"
+    ],
+    [
+      "foreach",
+      "code"
+    ],
+    [
+      "foreach",
+      "condition"
+    ],
+    [
+      "foreach",
+      "debate"
+    ],
+    [
+      "foreach",
+      "end"
+    ],
+    [
+      "foreach",
+      "fanout"
+    ],
+    [
+      "foreach",
+      "foreach"
+    ],
+    [
+      "foreach",
+      "guardrail"
+    ],
+    [
+      "foreach",
+      "hitl"
+    ],
+    [
+      "foreach",
+      "http"
+    ],
+    [
+      "foreach",
+      "join"
+    ],
+    [
+      "foreach",
+      "llmstep"
+    ],
+    [
+      "foreach",
+      "media"
+    ],
+    [
+      "foreach",
+      "remote_worker"
+    ],
+    [
+      "foreach",
+      "router"
+    ],
+    [
+      "foreach",
+      "setstate"
+    ],
+    [
+      "foreach",
+      "subgraph"
+    ],
+    [
+      "foreach",
+      "template"
+    ],
+    [
+      "foreach",
+      "while"
+    ],
+    [
+      "foreach",
+      "workerpool"
+    ],
+    [
+      "guardrail",
+      "agent"
+    ],
+    [
+      "guardrail",
+      "code"
+    ],
+    [
+      "guardrail",
+      "condition"
+    ],
+    [
+      "guardrail",
+      "debate"
+    ],
+    [
+      "guardrail",
+      "end"
+    ],
+    [
+      "guardrail",
+      "fanout"
+    ],
+    [
+      "guardrail",
+      "foreach"
+    ],
+    [
+      "guardrail",
+      "guardrail"
+    ],
+    [
+      "guardrail",
+      "hitl"
+    ],
+    [
+      "guardrail",
+      "http"
+    ],
+    [
+      "guardrail",
+      "join"
+    ],
+    [
+      "guardrail",
+      "llmstep"
+    ],
+    [
+      "guardrail",
+      "media"
+    ],
+    [
+      "guardrail",
+      "remote_worker"
+    ],
+    [
+      "guardrail",
+      "router"
+    ],
+    [
+      "guardrail",
+      "setstate"
+    ],
+    [
+      "guardrail",
+      "subgraph"
+    ],
+    [
+      "guardrail",
+      "template"
+    ],
+    [
+      "guardrail",
+      "while"
+    ],
+    [
+      "guardrail",
+      "workerpool"
+    ],
+    [
+      "gui",
+      "agent"
+    ],
+    [
+      "gui",
+      "router"
+    ],
+    [
+      "gui",
+      "workerpool"
+    ],
+    [
+      "hitl",
+      "agent"
+    ],
+    [
+      "hitl",
+      "code"
+    ],
+    [
+      "hitl",
+      "condition"
+    ],
+    [
+      "hitl",
+      "debate"
+    ],
+    [
+      "hitl",
+      "end"
+    ],
+    [
+      "hitl",
+      "fanout"
+    ],
+    [
+      "hitl",
+      "foreach"
+    ],
+    [
+      "hitl",
+      "guardrail"
+    ],
+    [
+      "hitl",
+      "hitl"
+    ],
+    [
+      "hitl",
+      "http"
+    ],
+    [
+      "hitl",
+      "join"
+    ],
+    [
+      "hitl",
+      "llmstep"
+    ],
+    [
+      "hitl",
+      "media"
+    ],
+    [
+      "hitl",
+      "remote_worker"
+    ],
+    [
+      "hitl",
+      "router"
+    ],
+    [
+      "hitl",
+      "setstate"
+    ],
+    [
+      "hitl",
+      "subgraph"
+    ],
+    [
+      "hitl",
+      "template"
+    ],
+    [
+      "hitl",
+      "while"
+    ],
+    [
+      "hitl",
+      "workerpool"
+    ],
+    [
+      "http",
+      "agent"
+    ],
+    [
+      "http",
+      "code"
+    ],
+    [
+      "http",
+      "condition"
+    ],
+    [
+      "http",
+      "debate"
+    ],
+    [
+      "http",
+      "end"
+    ],
+    [
+      "http",
+      "fanout"
+    ],
+    [
+      "http",
+      "foreach"
+    ],
+    [
+      "http",
+      "guardrail"
+    ],
+    [
+      "http",
+      "hitl"
+    ],
+    [
+      "http",
+      "http"
+    ],
+    [
+      "http",
+      "join"
+    ],
+    [
+      "http",
+      "llmstep"
+    ],
+    [
+      "http",
+      "media"
+    ],
+    [
+      "http",
+      "remote_worker"
+    ],
+    [
+      "http",
+      "router"
+    ],
+    [
+      "http",
+      "setstate"
+    ],
+    [
+      "http",
+      "subgraph"
+    ],
+    [
+      "http",
+      "template"
+    ],
+    [
+      "http",
+      "while"
+    ],
+    [
+      "http",
+      "workerpool"
+    ],
+    [
+      "join",
+      "agent"
+    ],
+    [
+      "join",
+      "code"
+    ],
+    [
+      "join",
+      "condition"
+    ],
+    [
+      "join",
+      "debate"
+    ],
+    [
+      "join",
+      "end"
+    ],
+    [
+      "join",
+      "fanout"
+    ],
+    [
+      "join",
+      "foreach"
+    ],
+    [
+      "join",
+      "guardrail"
+    ],
+    [
+      "join",
+      "hitl"
+    ],
+    [
+      "join",
+      "http"
+    ],
+    [
+      "join",
+      "join"
+    ],
+    [
+      "join",
+      "llmstep"
+    ],
+    [
+      "join",
+      "media"
+    ],
+    [
+      "join",
+      "remote_worker"
+    ],
+    [
+      "join",
+      "router"
+    ],
+    [
+      "join",
+      "setstate"
+    ],
+    [
+      "join",
+      "subgraph"
+    ],
+    [
+      "join",
+      "template"
+    ],
+    [
+      "join",
+      "while"
+    ],
+    [
+      "join",
+      "workerpool"
+    ],
+    [
+      "llm",
+      "agent"
+    ],
+    [
+      "llm",
+      "router"
+    ],
+    [
+      "llm",
+      "workerpool"
+    ],
+    [
+      "llmstep",
+      "agent"
+    ],
+    [
+      "llmstep",
+      "code"
+    ],
+    [
+      "llmstep",
+      "condition"
+    ],
+    [
+      "llmstep",
+      "debate"
+    ],
+    [
+      "llmstep",
+      "end"
+    ],
+    [
+      "llmstep",
+      "fanout"
+    ],
+    [
+      "llmstep",
+      "foreach"
+    ],
+    [
+      "llmstep",
+      "guardrail"
+    ],
+    [
+      "llmstep",
+      "hitl"
+    ],
+    [
+      "llmstep",
+      "http"
+    ],
+    [
+      "llmstep",
+      "join"
+    ],
+    [
+      "llmstep",
+      "llmstep"
+    ],
+    [
+      "llmstep",
+      "media"
+    ],
+    [
+      "llmstep",
+      "remote_worker"
+    ],
+    [
+      "llmstep",
+      "router"
+    ],
+    [
+      "llmstep",
+      "setstate"
+    ],
+    [
+      "llmstep",
+      "subgraph"
+    ],
+    [
+      "llmstep",
+      "template"
+    ],
+    [
+      "llmstep",
+      "while"
+    ],
+    [
+      "llmstep",
+      "workerpool"
+    ],
+    [
+      "mcp",
+      "agent"
+    ],
+    [
+      "mcp",
+      "router"
+    ],
+    [
+      "mcp",
+      "workerpool"
+    ],
+    [
+      "media",
+      "agent"
+    ],
+    [
+      "media",
+      "code"
+    ],
+    [
+      "media",
+      "condition"
+    ],
+    [
+      "media",
+      "debate"
+    ],
+    [
+      "media",
+      "end"
+    ],
+    [
+      "media",
+      "fanout"
+    ],
+    [
+      "media",
+      "foreach"
+    ],
+    [
+      "media",
+      "guardrail"
+    ],
+    [
+      "media",
+      "hitl"
+    ],
+    [
+      "media",
+      "http"
+    ],
+    [
+      "media",
+      "join"
+    ],
+    [
+      "media",
+      "llmstep"
+    ],
+    [
+      "media",
+      "media"
+    ],
+    [
+      "media",
+      "remote_worker"
+    ],
+    [
+      "media",
+      "router"
+    ],
+    [
+      "media",
+      "setstate"
+    ],
+    [
+      "media",
+      "subgraph"
+    ],
+    [
+      "media",
+      "template"
+    ],
+    [
+      "media",
+      "while"
+    ],
+    [
+      "media",
+      "workerpool"
+    ],
+    [
+      "memory",
+      "agent"
+    ],
+    [
+      "memory",
+      "router"
+    ],
+    [
+      "memory",
+      "workerpool"
+    ],
+    [
+      "prompt",
+      "agent"
+    ],
+    [
+      "prompt",
+      "router"
+    ],
+    [
+      "prompt",
+      "workerpool"
+    ],
+    [
+      "rag",
+      "agent"
+    ],
+    [
+      "rag",
+      "router"
+    ],
+    [
+      "rag",
+      "workerpool"
+    ],
+    [
+      "remote_worker",
+      "agent"
+    ],
+    [
+      "remote_worker",
+      "code"
+    ],
+    [
+      "remote_worker",
+      "condition"
+    ],
+    [
+      "remote_worker",
+      "debate"
+    ],
+    [
+      "remote_worker",
+      "end"
+    ],
+    [
+      "remote_worker",
+      "fanout"
+    ],
+    [
+      "remote_worker",
+      "foreach"
+    ],
+    [
+      "remote_worker",
+      "guardrail"
+    ],
+    [
+      "remote_worker",
+      "hitl"
+    ],
+    [
+      "remote_worker",
+      "http"
+    ],
+    [
+      "remote_worker",
+      "join"
+    ],
+    [
+      "remote_worker",
+      "llmstep"
+    ],
+    [
+      "remote_worker",
+      "media"
+    ],
+    [
+      "remote_worker",
+      "remote_worker"
+    ],
+    [
+      "remote_worker",
+      "router"
+    ],
+    [
+      "remote_worker",
+      "setstate"
+    ],
+    [
+      "remote_worker",
+      "subgraph"
+    ],
+    [
+      "remote_worker",
+      "template"
+    ],
+    [
+      "remote_worker",
+      "while"
+    ],
+    [
+      "remote_worker",
+      "workerpool"
+    ],
+    [
+      "router",
+      "agent"
+    ],
+    [
+      "router",
+      "code"
+    ],
+    [
+      "router",
+      "condition"
+    ],
+    [
+      "router",
+      "debate"
+    ],
+    [
+      "router",
+      "fanout"
+    ],
+    [
+      "router",
+      "foreach"
+    ],
+    [
+      "router",
+      "guardrail"
+    ],
+    [
+      "router",
+      "hitl"
+    ],
+    [
+      "router",
+      "http"
+    ],
+    [
+      "router",
+      "join"
+    ],
+    [
+      "router",
+      "llmstep"
+    ],
+    [
+      "router",
+      "media"
+    ],
+    [
+      "router",
+      "remote_worker"
+    ],
+    [
+      "router",
+      "router"
+    ],
+    [
+      "router",
+      "setstate"
+    ],
+    [
+      "router",
+      "subgraph"
+    ],
+    [
+      "router",
+      "template"
+    ],
+    [
+      "router",
+      "while"
+    ],
+    [
+      "router",
+      "workerpool"
+    ],
+    [
+      "schedule",
+      "agent"
+    ],
+    [
+      "schedule",
+      "router"
+    ],
+    [
+      "schedule",
+      "workerpool"
+    ],
+    [
+      "setstate",
+      "agent"
+    ],
+    [
+      "setstate",
+      "code"
+    ],
+    [
+      "setstate",
+      "condition"
+    ],
+    [
+      "setstate",
+      "debate"
+    ],
+    [
+      "setstate",
+      "end"
+    ],
+    [
+      "setstate",
+      "fanout"
+    ],
+    [
+      "setstate",
+      "foreach"
+    ],
+    [
+      "setstate",
+      "guardrail"
+    ],
+    [
+      "setstate",
+      "hitl"
+    ],
+    [
+      "setstate",
+      "http"
+    ],
+    [
+      "setstate",
+      "join"
+    ],
+    [
+      "setstate",
+      "llmstep"
+    ],
+    [
+      "setstate",
+      "media"
+    ],
+    [
+      "setstate",
+      "remote_worker"
+    ],
+    [
+      "setstate",
+      "router"
+    ],
+    [
+      "setstate",
+      "setstate"
+    ],
+    [
+      "setstate",
+      "subgraph"
+    ],
+    [
+      "setstate",
+      "template"
+    ],
+    [
+      "setstate",
+      "while"
+    ],
+    [
+      "setstate",
+      "workerpool"
+    ],
+    [
+      "skill",
+      "agent"
+    ],
+    [
+      "skill",
+      "router"
+    ],
+    [
+      "skill",
+      "workerpool"
+    ],
+    [
+      "subgraph",
+      "agent"
+    ],
+    [
+      "subgraph",
+      "code"
+    ],
+    [
+      "subgraph",
+      "condition"
+    ],
+    [
+      "subgraph",
+      "debate"
+    ],
+    [
+      "subgraph",
+      "end"
+    ],
+    [
+      "subgraph",
+      "fanout"
+    ],
+    [
+      "subgraph",
+      "foreach"
+    ],
+    [
+      "subgraph",
+      "guardrail"
+    ],
+    [
+      "subgraph",
+      "hitl"
+    ],
+    [
+      "subgraph",
+      "http"
+    ],
+    [
+      "subgraph",
+      "join"
+    ],
+    [
+      "subgraph",
+      "llmstep"
+    ],
+    [
+      "subgraph",
+      "media"
+    ],
+    [
+      "subgraph",
+      "remote_worker"
+    ],
+    [
+      "subgraph",
+      "router"
+    ],
+    [
+      "subgraph",
+      "setstate"
+    ],
+    [
+      "subgraph",
+      "subgraph"
+    ],
+    [
+      "subgraph",
+      "template"
+    ],
+    [
+      "subgraph",
+      "while"
+    ],
+    [
+      "subgraph",
+      "workerpool"
+    ],
+    [
+      "template",
+      "agent"
+    ],
+    [
+      "template",
+      "code"
+    ],
+    [
+      "template",
+      "condition"
+    ],
+    [
+      "template",
+      "debate"
+    ],
+    [
+      "template",
+      "end"
+    ],
+    [
+      "template",
+      "fanout"
+    ],
+    [
+      "template",
+      "foreach"
+    ],
+    [
+      "template",
+      "guardrail"
+    ],
+    [
+      "template",
+      "hitl"
+    ],
+    [
+      "template",
+      "http"
+    ],
+    [
+      "template",
+      "join"
+    ],
+    [
+      "template",
+      "llmstep"
+    ],
+    [
+      "template",
+      "media"
+    ],
+    [
+      "template",
+      "remote_worker"
+    ],
+    [
+      "template",
+      "router"
+    ],
+    [
+      "template",
+      "setstate"
+    ],
+    [
+      "template",
+      "subgraph"
+    ],
+    [
+      "template",
+      "template"
+    ],
+    [
+      "template",
+      "while"
+    ],
+    [
+      "template",
+      "workerpool"
+    ],
+    [
+      "tool",
+      "agent"
+    ],
+    [
+      "tool",
+      "mcp_server"
+    ],
+    [
+      "tool",
+      "router"
+    ],
+    [
+      "tool",
+      "workerpool"
+    ],
+    [
+      "webhook",
+      "agent"
+    ],
+    [
+      "webhook",
+      "router"
+    ],
+    [
+      "webhook",
+      "workerpool"
+    ],
+    [
+      "while",
+      "agent"
+    ],
+    [
+      "while",
+      "code"
+    ],
+    [
+      "while",
+      "condition"
+    ],
+    [
+      "while",
+      "debate"
+    ],
+    [
+      "while",
+      "end"
+    ],
+    [
+      "while",
+      "fanout"
+    ],
+    [
+      "while",
+      "foreach"
+    ],
+    [
+      "while",
+      "guardrail"
+    ],
+    [
+      "while",
+      "hitl"
+    ],
+    [
+      "while",
+      "http"
+    ],
+    [
+      "while",
+      "join"
+    ],
+    [
+      "while",
+      "llmstep"
+    ],
+    [
+      "while",
+      "media"
+    ],
+    [
+      "while",
+      "remote_worker"
+    ],
+    [
+      "while",
+      "router"
+    ],
+    [
+      "while",
+      "setstate"
+    ],
+    [
+      "while",
+      "subgraph"
+    ],
+    [
+      "while",
+      "template"
+    ],
+    [
+      "while",
+      "while"
+    ],
+    [
+      "while",
+      "workerpool"
+    ],
+    [
+      "workerpool",
+      "agent"
+    ],
+    [
+      "workerpool",
+      "code"
+    ],
+    [
+      "workerpool",
+      "condition"
+    ],
+    [
+      "workerpool",
+      "debate"
+    ],
+    [
+      "workerpool",
+      "end"
+    ],
+    [
+      "workerpool",
+      "fanout"
+    ],
+    [
+      "workerpool",
+      "foreach"
+    ],
+    [
+      "workerpool",
+      "guardrail"
+    ],
+    [
+      "workerpool",
+      "hitl"
+    ],
+    [
+      "workerpool",
+      "http"
+    ],
+    [
+      "workerpool",
+      "join"
+    ],
+    [
+      "workerpool",
+      "llmstep"
+    ],
+    [
+      "workerpool",
+      "media"
+    ],
+    [
+      "workerpool",
+      "remote_worker"
+    ],
+    [
+      "workerpool",
+      "router"
+    ],
+    [
+      "workerpool",
+      "setstate"
+    ],
+    [
+      "workerpool",
+      "subgraph"
+    ],
+    [
+      "workerpool",
+      "template"
+    ],
+    [
+      "workerpool",
+      "while"
+    ],
+    [
+      "workerpool",
+      "workerpool"
+    ]
+  ],
+  "kinds": {
+    "agent": {
+      "color": "#BBDEFB",
+      "family": "stage",
+      "label": "Agent",
+      "props": {
+        "access": {
+          "default": {},
+          "widget": "object"
+        },
+        "adaptive_retrieval": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "block_repeat_tools": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "budget_summary": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "cite_check": {
+          "default": "off",
+          "widget": "text"
+        },
+        "code_exec": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "code_exec_backend": {
+          "default": "subprocess",
+          "widget": "text"
+        },
+        "code_exec_image": {
+          "default": "python:3.11-slim",
+          "widget": "text"
+        },
+        "code_exec_memory_mb": {
+          "default": 512,
+          "widget": "int"
+        },
+        "code_exec_timeout": {
+          "default": 30,
+          "widget": "int"
+        },
+        "compact_threshold": {
+          "default": 85,
+          "widget": "int"
+        },
+        "enable_todos": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "final_schema": {
+          "default": "",
+          "widget": "text"
+        },
+        "final_schema_retries": {
+          "default": 2,
+          "widget": "int"
+        },
+        "groundedness_check": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "groundedness_on_fail": {
+          "default": "pass",
+          "widget": "text"
+        },
+        "guardrails": {
+          "default": {},
+          "widget": "object"
+        },
+        "history_keep_recent": {
+          "default": 0,
+          "widget": "int"
+        },
+        "history_strategy": {
+          "default": "summary_buffer",
+          "widget": "text"
+        },
+        "hitl_confidence_threshold": {
+          "default": 0.6,
+          "widget": "float"
+        },
+        "hitl_decisions": {
+          "default": [
+            "approve",
+            "edit",
+            "reject"
+          ],
+          "widget": "list"
+        },
+        "hitl_on_reject": {
+          "default": "stop",
+          "widget": "text"
+        },
+        "hitl_on_timeout": {
+          "default": "approve",
+          "widget": "text"
+        },
+        "hitl_review": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "hitl_timeout": {
+          "default": 0,
+          "widget": "int"
+        },
+        "hitl_triggers": {
+          "default": [
+            "high_risk_tool"
+          ],
+          "widget": "list"
+        },
+        "inline_nodes": {
+          "default": [],
+          "widget": "list"
+        },
+        "inline_resources": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "max_budget_usd": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_iterations": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_output_tokens": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_regen": {
+          "default": 1,
+          "widget": "int"
+        },
+        "max_rpm": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_tool_calls": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_wall_clock_s": {
+          "default": 0,
+          "widget": "int"
+        },
+        "mode_label": {
+          "default": "",
+          "widget": "text"
+        },
+        "offload_results": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "on_budget": {
+          "default": "continue",
+          "widget": "text"
+        },
+        "quick_response": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "reads": {
+          "default": [],
+          "widget": "list"
+        },
+        "require_writes": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "role": {
+          "default": "single",
+          "widget": "text"
+        },
+        "route_self": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "spawn": {
+          "default": [],
+          "widget": "list"
+        },
+        "stage_retries": {
+          "default": 0,
+          "widget": "int"
+        },
+        "stall_rounds": {
+          "default": 0,
+          "widget": "int"
+        },
+        "web_search": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "web_search_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "web_search_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "web_search_engine": {
+          "default": "",
+          "widget": "text"
+        },
+        "web_search_proxy": {
+          "default": "",
+          "widget": "text"
+        },
+        "writes": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "rect"
+    },
+    "code": {
+      "color": "#CFD8DC",
+      "family": "step",
+      "label": "Code",
+      "props": {
+        "code": {
+          "default": "",
+          "widget": "text"
+        },
+        "in_fields": {
+          "default": [],
+          "widget": "list"
+        },
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "condition": {
+      "color": "#F8BBD0",
+      "family": "control",
+      "label": "If/Else",
+      "props": {
+        "branches": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "diamond",
+      "tag": "if / else"
+    },
+    "debate": {
+      "color": "#9FA8DA",
+      "family": "stage",
+      "label": "Debate",
+      "props": {
+        "converge": {
+          "default": "",
+          "widget": "text"
+        },
+        "exit": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_parallel": {
+          "default": 0,
+          "widget": "int"
+        },
+        "policy": {
+          "default": "round_robin",
+          "widget": "text"
+        },
+        "rounds": {
+          "default": 2,
+          "widget": "int"
+        },
+        "transcript_field": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "diamond",
+      "tag": "debate"
+    },
+    "end": {
+      "color": "#90A4AE",
+      "family": "stage",
+      "label": "End",
+      "props": {},
+      "shape": "stadium"
+    },
+    "eval": {
+      "color": "#DCEDC8",
+      "family": "emitter",
+      "label": "Eval",
+      "props": {
+        "cases": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "hexagon"
+    },
+    "fanout": {
+      "color": "#80DEEA",
+      "family": "control",
+      "label": "Fan-out",
+      "props": {
+        "max_parallel": {
+          "default": 0,
+          "widget": "int"
+        }
+      },
+      "shape": "diamond",
+      "tag": "fan-out"
+    },
+    "foreach": {
+      "color": "#B39DDB",
+      "family": "control",
+      "label": "For-Each",
+      "props": {
+        "body": {
+          "default": "",
+          "widget": "text"
+        },
+        "item_var": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_parallel": {
+          "default": 0,
+          "widget": "int"
+        },
+        "merge": {
+          "default": "concat",
+          "widget": "text"
+        },
+        "over": {
+          "default": "",
+          "widget": "text"
+        },
+        "result_field": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "diamond",
+      "tag": "for each"
+    },
+    "guardrail": {
+      "color": "#EF9A9A",
+      "family": "emitter",
+      "label": "Guardrail",
+      "props": {
+        "checks": {
+          "default": {
+            "injection": false,
+            "pii": false,
+            "secret": true
+          },
+          "widget": "object"
+        },
+        "keywords": {
+          "default": [],
+          "widget": "list"
+        },
+        "max_length": {
+          "default": 0,
+          "widget": "int"
+        },
+        "on_trip": {
+          "default": "redact",
+          "widget": "text"
+        },
+        "patterns": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "octagon"
+    },
+    "gui": {
+      "color": "#FFCCBC",
+      "family": "emitter",
+      "label": "GUI",
+      "props": {
+        "custom_gui": {
+          "default": "",
+          "widget": "text"
+        },
+        "fold_thinking": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "input_history": {
+          "default": true,
+          "widget": "checkbox"
+        }
+      },
+      "shape": "trapezoid"
+    },
+    "hitl": {
+      "color": "#FFE082",
+      "family": "emitter",
+      "label": "HITL",
+      "props": {
+        "decisions": {
+          "default": [
+            "approve",
+            "edit",
+            "reject"
+          ],
+          "widget": "list"
+        },
+        "default_route": {
+          "default": "",
+          "widget": "text"
+        },
+        "on_hitl": {
+          "default": "block",
+          "widget": "text"
+        },
+        "on_reject": {
+          "default": "stop",
+          "widget": "text"
+        },
+        "on_timeout": {
+          "default": "approve",
+          "widget": "text"
+        },
+        "prompt": {
+          "default": "Review the output before continuing.",
+          "widget": "text"
+        },
+        "timeout": {
+          "default": 0,
+          "widget": "int"
+        }
+      },
+      "shape": "octagon"
+    },
+    "http": {
+      "color": "#B2EBF2",
+      "family": "step",
+      "label": "HTTP",
+      "props": {
+        "auth": {
+          "default": "none",
+          "widget": "text"
+        },
+        "auth_token": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "body": {
+          "default": "",
+          "widget": "text"
+        },
+        "headers": {
+          "default": {},
+          "widget": "object"
+        },
+        "method": {
+          "default": "GET",
+          "widget": "text"
+        },
+        "on_error": {
+          "default": "continue",
+          "widget": "text"
+        },
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "proxy": {
+          "default": "",
+          "widget": "text"
+        },
+        "result": {
+          "default": "full",
+          "widget": "text"
+        },
+        "timeout": {
+          "default": 30,
+          "widget": "int"
+        },
+        "url": {
+          "default": "",
+          "widget": "text"
+        },
+        "verify_tls": {
+          "default": true,
+          "widget": "checkbox"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "join": {
+      "color": "#4DB6AC",
+      "family": "control",
+      "label": "Join",
+      "props": {
+        "merge": {
+          "default": "concat",
+          "widget": "text"
+        }
+      },
+      "shape": "diamond",
+      "tag": "join"
+    },
+    "llm": {
+      "color": "#C8E6C9",
+      "family": "resource",
+      "label": "LLM",
+      "props": {
+        "api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "api_version": {
+          "default": "",
+          "widget": "text"
+        },
+        "base_url": {
+          "default": "https://api.siliconflow.cn/v1",
+          "widget": "text"
+        },
+        "context_capacity": {
+          "default": 0,
+          "widget": "int"
+        },
+        "extra": {
+          "default": "",
+          "widget": "text"
+        },
+        "frequency_penalty": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_retries": {
+          "default": "",
+          "widget": "text"
+        },
+        "model": {
+          "default": "deepseek-ai/DeepSeek-V4-Flash",
+          "widget": "text"
+        },
+        "parallel_tools": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "presence_penalty": {
+          "default": "",
+          "widget": "text"
+        },
+        "price_in_per_1m": {
+          "default": "",
+          "widget": "text"
+        },
+        "price_out_per_1m": {
+          "default": "",
+          "widget": "text"
+        },
+        "provider": {
+          "default": "siliconflow",
+          "widget": "text"
+        },
+        "proxy": {
+          "default": "",
+          "widget": "text"
+        },
+        "reasoning_effort": {
+          "default": "",
+          "widget": "text"
+        },
+        "request_timeout_s": {
+          "default": 120,
+          "widget": "int"
+        },
+        "response_format": {
+          "default": "text",
+          "widget": "text"
+        },
+        "response_schema": {
+          "default": "",
+          "widget": "text"
+        },
+        "seed": {
+          "default": "",
+          "widget": "text"
+        },
+        "stop": {
+          "default": "",
+          "widget": "text"
+        },
+        "stream_idle_timeout_s": {
+          "default": "",
+          "widget": "text"
+        },
+        "temperature": {
+          "default": "",
+          "widget": "text"
+        },
+        "token_counter": {
+          "default": "heuristic",
+          "widget": "text"
+        },
+        "token_encoding": {
+          "default": "",
+          "widget": "text"
+        },
+        "tool_choice": {
+          "default": "auto",
+          "widget": "text"
+        },
+        "tool_choice_name": {
+          "default": "",
+          "widget": "text"
+        },
+        "top_k": {
+          "default": "",
+          "widget": "text"
+        },
+        "top_p": {
+          "default": "",
+          "widget": "text"
+        },
+        "vision": {
+          "default": false,
+          "widget": "checkbox"
+        }
+      },
+      "shape": "hexagon"
+    },
+    "llmstep": {
+      "color": "#C5E1A5",
+      "family": "step",
+      "label": "LLM Step",
+      "props": {
+        "api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "base_url": {
+          "default": "https://api.siliconflow.cn/v1",
+          "widget": "text"
+        },
+        "in_fields": {
+          "default": [],
+          "widget": "list"
+        },
+        "max_output_tokens": {
+          "default": "",
+          "widget": "text"
+        },
+        "model": {
+          "default": "deepseek-ai/DeepSeek-V4-Flash",
+          "widget": "text"
+        },
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "prompt": {
+          "default": "",
+          "widget": "text"
+        },
+        "provider": {
+          "default": "siliconflow",
+          "widget": "text"
+        },
+        "system": {
+          "default": "",
+          "widget": "text"
+        },
+        "temperature": {
+          "default": "",
+          "widget": "text"
+        },
+        "top_p": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "hexagon"
+    },
+    "mcp": {
+      "color": "#D1C4E9",
+      "family": "resource",
+      "label": "MCP",
+      "props": {
+        "allow_tools": {
+          "default": "",
+          "widget": "text"
+        },
+        "args": {
+          "default": "",
+          "widget": "text"
+        },
+        "call_timeout": {
+          "default": 0,
+          "widget": "int"
+        },
+        "command": {
+          "default": "",
+          "widget": "text"
+        },
+        "connect_timeout": {
+          "default": 0,
+          "widget": "int"
+        },
+        "deny_tools": {
+          "default": "",
+          "widget": "text"
+        },
+        "describe_mode": {
+          "default": "server",
+          "widget": "text"
+        },
+        "env": {
+          "default": "",
+          "widget": "text"
+        },
+        "headers": {
+          "default": "",
+          "widget": "text"
+        },
+        "tool_descriptions": {
+          "default": {},
+          "widget": "object"
+        },
+        "transport": {
+          "default": "streamable_http",
+          "widget": "text"
+        },
+        "url": {
+          "default": "http://127.0.0.1:8000/mcp",
+          "widget": "text"
+        },
+        "verify_tls": {
+          "default": true,
+          "widget": "checkbox"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "mcp_server": {
+      "color": "#B39DDB",
+      "family": "emitter",
+      "label": "MCP Server",
+      "props": {
+        "allowed_origins": {
+          "default": [],
+          "widget": "list"
+        },
+        "auth_token": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "description": {
+          "default": "",
+          "widget": "text"
+        },
+        "host": {
+          "default": "127.0.0.1",
+          "widget": "text"
+        },
+        "port": {
+          "default": 8000,
+          "widget": "int"
+        },
+        "transport": {
+          "default": "stdio",
+          "widget": "text"
+        }
+      },
+      "shape": "trapezoid"
+    },
+    "media": {
+      "color": "#FFCC80",
+      "family": "step",
+      "label": "Media",
+      "props": {
+        "api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "base_url": {
+          "default": "https://api.siliconflow.cn/v1",
+          "widget": "text"
+        },
+        "endpoint": {
+          "default": "",
+          "widget": "text"
+        },
+        "image_size": {
+          "default": "1024x1024",
+          "widget": "text"
+        },
+        "in_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "mode": {
+          "default": "image",
+          "widget": "text"
+        },
+        "model": {
+          "default": "Kwai-Kolors/Kolors",
+          "widget": "text"
+        },
+        "out_dir": {
+          "default": "media_output",
+          "widget": "text"
+        },
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "provider": {
+          "default": "siliconflow",
+          "widget": "text"
+        },
+        "timeout": {
+          "default": 120,
+          "widget": "int"
+        },
+        "voice": {
+          "default": "alloy",
+          "widget": "text"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "memory": {
+      "color": "#80CBC4",
+      "family": "resource",
+      "label": "Memory",
+      "props": {
+        "auto_write": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "auto_write_prompt": {
+          "default": "",
+          "widget": "text"
+        },
+        "decay": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "dedup": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "description": {
+          "default": "",
+          "widget": "text"
+        },
+        "embed_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "embed_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "embed_model": {
+          "default": "BAAI/bge-small-zh-v1.5",
+          "widget": "text"
+        },
+        "embed_provider": {
+          "default": "local",
+          "widget": "text"
+        },
+        "entities": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "max_items": {
+          "default": 0,
+          "widget": "int"
+        },
+        "normalize": {
+          "default": true,
+          "widget": "checkbox"
+        },
+        "recall_scoring": {
+          "default": "relevance",
+          "widget": "text"
+        },
+        "recency_half_life_days": {
+          "default": 30,
+          "widget": "int"
+        },
+        "retrieval": {
+          "default": "bm25",
+          "widget": "text"
+        },
+        "scope": {
+          "default": "global",
+          "widget": "text"
+        },
+        "top_k": {
+          "default": 5,
+          "widget": "int"
+        },
+        "ttl_days": {
+          "default": 0,
+          "widget": "int"
+        },
+        "write_scan": {
+          "default": "off",
+          "widget": "text"
+        }
+      },
+      "shape": "cylinder"
+    },
+    "prompt": {
+      "color": "#FFF9C4",
+      "family": "resource",
+      "label": "Prompt",
+      "props": {
+        "role": {
+          "default": "single",
+          "widget": "text"
+        },
+        "text": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "document"
+    },
+    "rag": {
+      "color": "#B2DFDB",
+      "family": "resource",
+      "label": "RAG",
+      "props": {
+        "access": {
+          "default": {},
+          "widget": "object"
+        },
+        "cache_embeddings": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "chunk_chars": {
+          "default": 800,
+          "widget": "int"
+        },
+        "chunk_overlap": {
+          "default": 0,
+          "widget": "int"
+        },
+        "chunk_strategy": {
+          "default": "fixed",
+          "widget": "text"
+        },
+        "cite": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "clean": {
+          "default": {},
+          "widget": "object"
+        },
+        "contextual": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "corrective": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "corrective_max_rewrites": {
+          "default": 2,
+          "widget": "int"
+        },
+        "deletable": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "description": {
+          "default": "",
+          "widget": "text"
+        },
+        "docs_dir": {
+          "default": "",
+          "widget": "text"
+        },
+        "embed_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "embed_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "embed_model": {
+          "default": "BAAI/bge-small-zh-v1.5",
+          "widget": "text"
+        },
+        "embed_provider": {
+          "default": "local",
+          "widget": "text"
+        },
+        "evict_used": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "grade_docs": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "hf_endpoint": {
+          "default": "",
+          "widget": "text"
+        },
+        "hierarchy": {
+          "default": [],
+          "widget": "list"
+        },
+        "hierarchy_from_dir": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "hierarchy_path": {
+          "default": "",
+          "widget": "text"
+        },
+        "index_opts": {
+          "default": {},
+          "widget": "object"
+        },
+        "ingest_persist": {
+          "default": true,
+          "widget": "checkbox"
+        },
+        "invites": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "max_user_chunks": {
+          "default": 0,
+          "widget": "int"
+        },
+        "metadata_filter": {
+          "default": "",
+          "widget": "text"
+        },
+        "mmr": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "mmr_lambda": {
+          "default": 0.5,
+          "widget": "float"
+        },
+        "multi_query_n": {
+          "default": 3,
+          "widget": "int"
+        },
+        "normalize": {
+          "default": true,
+          "widget": "checkbox"
+        },
+        "on_no_context": {
+          "default": "answer",
+          "widget": "text"
+        },
+        "parent_chunk_chars": {
+          "default": 2400,
+          "widget": "int"
+        },
+        "per_user": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "pinecone_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "pinecone_namespace": {
+          "default": "",
+          "widget": "text"
+        },
+        "pinecone_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "proxy": {
+          "default": "",
+          "widget": "text"
+        },
+        "qdrant_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "qdrant_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "query_transform": {
+          "default": "none",
+          "widget": "text"
+        },
+        "recall_n": {
+          "default": 0,
+          "widget": "int"
+        },
+        "rerank_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "rerank_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "rerank_mode": {
+          "default": "none",
+          "widget": "text"
+        },
+        "rerank_model": {
+          "default": "",
+          "widget": "text"
+        },
+        "retrieval_algorithm": {
+          "default": "bm25",
+          "widget": "text"
+        },
+        "retrieval_granularity": {
+          "default": "chunk",
+          "widget": "text"
+        },
+        "score_threshold": {
+          "default": 0.0,
+          "widget": "float"
+        },
+        "sentence_window_size": {
+          "default": 2,
+          "widget": "int"
+        },
+        "top_k": {
+          "default": 4,
+          "widget": "int"
+        },
+        "vector_db": {
+          "default": "memory",
+          "widget": "text"
+        },
+        "vlm_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "vlm_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "vlm_model": {
+          "default": "",
+          "widget": "text"
+        },
+        "web_ingest": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "web_ingest_auth": {
+          "default": "none",
+          "widget": "text"
+        },
+        "web_ingest_domains": {
+          "default": [],
+          "widget": "list"
+        },
+        "web_ingest_exclude": {
+          "default": [],
+          "widget": "list"
+        },
+        "web_ingest_max_pages": {
+          "default": 25,
+          "widget": "int"
+        },
+        "web_ingest_token": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "web_ingest_verify_tls": {
+          "default": true,
+          "widget": "checkbox"
+        },
+        "writable": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "write_roles": {
+          "default": [],
+          "widget": "list"
+        },
+        "write_scan": {
+          "default": "off",
+          "widget": "text"
+        }
+      },
+      "shape": "cylinder"
+    },
+    "remote_worker": {
+      "color": "#9CCC65",
+      "family": "step",
+      "label": "Remote Worker",
+      "props": {
+        "base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "description": {
+          "default": "",
+          "widget": "text"
+        },
+        "identity_key_env": {
+          "default": "IDENTITY_SIGNING_KEY",
+          "widget": "text"
+        },
+        "identity_ttl_s": {
+          "default": 300,
+          "widget": "int"
+        },
+        "mode": {
+          "default": "tool",
+          "widget": "text"
+        },
+        "model": {
+          "default": "",
+          "widget": "text"
+        },
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "propagate_identity": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "queue_enabled": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "queue_in_flight": {
+          "default": 2,
+          "widget": "int"
+        },
+        "queue_max": {
+          "default": 32,
+          "widget": "int"
+        },
+        "receive_fields": {
+          "default": [],
+          "widget": "list"
+        },
+        "send_fields": {
+          "default": [],
+          "widget": "list"
+        },
+        "task_template": {
+          "default": "",
+          "widget": "text"
+        },
+        "timeout_s": {
+          "default": 300,
+          "widget": "int"
+        },
+        "token_env": {
+          "default": "WORKER_TOKEN",
+          "widget": "text"
+        },
+        "worker_graph": {
+          "default": {},
+          "widget": "object"
+        },
+        "worker_source": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "router": {
+      "color": "#B0BEC5",
+      "family": "stage",
+      "label": "Router",
+      "props": {
+        "default_route": {
+          "default": "",
+          "widget": "text"
+        },
+        "inline_nodes": {
+          "default": [],
+          "widget": "list"
+        },
+        "inline_resources": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "instructions": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_iterations": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_output_tokens": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_tool_calls": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_wall_clock_s": {
+          "default": 0,
+          "widget": "int"
+        },
+        "role": {
+          "default": "router",
+          "widget": "text"
+        },
+        "routing_api_key": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "routing_base_url": {
+          "default": "",
+          "widget": "text"
+        },
+        "routing_model": {
+          "default": "",
+          "widget": "text"
+        },
+        "routing_provider": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "diamond",
+      "tag": "route"
+    },
+    "schedule": {
+      "color": "#FFAB91",
+      "family": "emitter",
+      "label": "Schedule",
+      "props": {
+        "at": {
+          "default": "",
+          "widget": "text"
+        },
+        "every_seconds": {
+          "default": 3600,
+          "widget": "int"
+        },
+        "initial_task": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_runs": {
+          "default": 0,
+          "widget": "int"
+        },
+        "mode": {
+          "default": "interval",
+          "widget": "text"
+        },
+        "offset_seconds": {
+          "default": 0,
+          "widget": "int"
+        },
+        "run_at_start": {
+          "default": true,
+          "widget": "checkbox"
+        },
+        "session_id": {
+          "default": "",
+          "widget": "text"
+        },
+        "start_at": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "trapezoid"
+    },
+    "setstate": {
+      "color": "#B3E5FC",
+      "family": "control",
+      "label": "Set State",
+      "props": {
+        "assignments": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "skill": {
+      "color": "#E1BEE7",
+      "family": "resource",
+      "label": "Skills",
+      "props": {
+        "skills": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "document"
+    },
+    "subgraph": {
+      "color": "#A5D6A7",
+      "family": "control",
+      "label": "Subgraph",
+      "props": {
+        "graph_json": {
+          "default": {},
+          "widget": "object"
+        },
+        "graph_name": {
+          "default": "",
+          "widget": "text"
+        },
+        "io": {
+          "default": {
+            "inputs": [],
+            "outputs": [],
+            "shared": []
+          },
+          "widget": "object"
+        }
+      },
+      "shape": "rect"
+    },
+    "template": {
+      "color": "#FFF9C4",
+      "family": "step",
+      "label": "Template",
+      "props": {
+        "out_field": {
+          "default": "",
+          "widget": "text"
+        },
+        "template": {
+          "default": "",
+          "widget": "text"
+        }
+      },
+      "shape": "document"
+    },
+    "tool": {
+      "color": "#FFE0B2",
+      "family": "resource",
+      "label": "Tools",
+      "props": {
+        "files": {
+          "default": [],
+          "widget": "list"
+        },
+        "tool_props": {
+          "default": {},
+          "widget": "object"
+        }
+      },
+      "shape": "parallelogram"
+    },
+    "webhook": {
+      "color": "#FF8A65",
+      "family": "emitter",
+      "label": "Webhook",
+      "props": {
+        "auto_allow_tools": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "host": {
+          "default": "127.0.0.1",
+          "widget": "text"
+        },
+        "path": {
+          "default": "/webhook",
+          "widget": "text"
+        },
+        "port": {
+          "default": 8500,
+          "widget": "int"
+        },
+        "secret": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "session_id": {
+          "default": "",
+          "widget": "text"
+        },
+        "sig_header": {
+          "default": "X-Hub-Signature-256",
+          "widget": "text"
+        }
+      },
+      "shape": "trapezoid"
+    },
+    "webserver": {
+      "color": "#FFCDD2",
+      "family": "emitter",
+      "label": "WebServer",
+      "props": {
+        "allowed_origins": {
+          "default": [],
+          "widget": "list"
+        },
+        "auth_token": {
+          "default": "",
+          "secret": true,
+          "widget": "text"
+        },
+        "auto_allow_tools": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "autostart": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "custom_web": {
+          "default": {},
+          "widget": "object"
+        },
+        "default_admin": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "gateway": {
+          "default": "",
+          "widget": "text"
+        },
+        "gateway_port": {
+          "default": 80,
+          "widget": "int"
+        },
+        "gateway_strategy": {
+          "default": "least_conn",
+          "widget": "text"
+        },
+        "host": {
+          "default": "127.0.0.1",
+          "widget": "text"
+        },
+        "identity_audience": {
+          "default": "",
+          "widget": "text"
+        },
+        "identity_key_env": {
+          "default": "IDENTITY_SIGNING_KEY",
+          "widget": "text"
+        },
+        "log_format": {
+          "default": "text",
+          "widget": "text"
+        },
+        "log_payloads": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "max_connections": {
+          "default": 0,
+          "widget": "int"
+        },
+        "metrics": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "port": {
+          "default": 8765,
+          "widget": "int"
+        },
+        "replicas": {
+          "default": 1,
+          "widget": "int"
+        },
+        "require_identity": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "rest_enabled": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "rest_port": {
+          "default": 0,
+          "widget": "int"
+        },
+        "self_register_role": {
+          "default": "user",
+          "widget": "text"
+        },
+        "state_dir": {
+          "default": "",
+          "widget": "text"
+        },
+        "tls_cert": {
+          "default": "",
+          "widget": "text"
+        },
+        "tls_key": {
+          "default": "",
+          "widget": "text"
+        },
+        "user_creation": {
+          "default": "invite",
+          "widget": "text"
+        },
+        "user_db": {
+          "default": false,
+          "widget": "checkbox"
+        }
+      },
+      "shape": "trapezoid"
+    },
+    "while": {
+      "color": "#CE93D8",
+      "family": "control",
+      "label": "While",
+      "props": {
+        "body": {
+          "default": "",
+          "widget": "text"
+        },
+        "condition": {
+          "default": "",
+          "widget": "text"
+        },
+        "converge": {
+          "default": "",
+          "widget": "text"
+        },
+        "max_iterations": {
+          "default": 0,
+          "widget": "int"
+        }
+      },
+      "shape": "diamond",
+      "tag": "while"
+    },
+    "workerpool": {
+      "color": "#C5CAE9",
+      "family": "stage",
+      "label": "Worker Pool",
+      "props": {
+        "critic_prompt": {
+          "default": "",
+          "widget": "text"
+        },
+        "critic_threshold": {
+          "default": 0.7,
+          "widget": "float"
+        },
+        "enable_todos": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "guardrails": {
+          "default": {},
+          "widget": "object"
+        },
+        "hitl_confidence_threshold": {
+          "default": 0.6,
+          "widget": "float"
+        },
+        "hitl_decisions": {
+          "default": [
+            "approve",
+            "edit",
+            "reject"
+          ],
+          "widget": "list"
+        },
+        "hitl_on_reject": {
+          "default": "stop",
+          "widget": "text"
+        },
+        "hitl_on_timeout": {
+          "default": "approve",
+          "widget": "text"
+        },
+        "hitl_review": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "hitl_timeout": {
+          "default": 0,
+          "widget": "int"
+        },
+        "hitl_triggers": {
+          "default": [
+            "high_risk_tool"
+          ],
+          "widget": "list"
+        },
+        "inline_nodes": {
+          "default": [],
+          "widget": "list"
+        },
+        "inline_resources": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "max_iterations": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_output_tokens": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_revisions": {
+          "default": 1,
+          "widget": "int"
+        },
+        "max_rpm": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_tool_calls": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_wall_clock_s": {
+          "default": 0,
+          "widget": "int"
+        },
+        "max_workers": {
+          "default": 4,
+          "widget": "int"
+        },
+        "pool_strategy": {
+          "default": "",
+          "widget": "text"
+        },
+        "reads": {
+          "default": [],
+          "widget": "list"
+        },
+        "reduce_prompt": {
+          "default": "",
+          "widget": "text"
+        },
+        "require_writes": {
+          "default": false,
+          "widget": "checkbox"
+        },
+        "role": {
+          "default": "worker",
+          "widget": "text"
+        },
+        "stage_retries": {
+          "default": 0,
+          "widget": "int"
+        },
+        "writes": {
+          "default": [],
+          "widget": "list"
+        }
+      },
+      "shape": "rect"
+    }
+  },
+  "palette": [
+    {
+      "group": "Agents & flow",
+      "kinds": [
+        "agent",
+        "workerpool",
+        "router",
+        "debate",
+        "end"
+      ]
+    },
+    {
+      "group": "Resources",
+      "kinds": [
+        "llm",
+        "prompt",
+        "tool",
+        "skill",
+        "rag",
+        "memory",
+        "mcp"
+      ]
+    },
+    {
+      "group": "Control flow",
+      "kinds": [
+        "condition",
+        "while",
+        "foreach",
+        "setstate",
+        "fanout",
+        "join",
+        "subgraph"
+      ]
+    },
+    {
+      "group": "Steps & I/O",
+      "kinds": [
+        "llmstep",
+        "code",
+        "http",
+        "template",
+        "media",
+        "remote_worker"
+      ]
+    },
+    {
+      "group": "Interfaces & ops",
+      "kinds": [
+        "webserver",
+        "mcp_server",
+        "gui",
+        "schedule",
+        "webhook",
+        "hitl",
+        "eval",
+        "guardrail"
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "state": {
+    "reducers": [
+      "overwrite",
+      "append",
+      "add",
+      "max",
+      "min",
+      "extend",
+      "merge_shallow",
+      "merge_deep",
+      "upsert_by_key",
+      "custom"
+    ],
+    "types": [
+      "str",
+      "int",
+      "float",
+      "bool",
+      "list",
+      "dict"
+    ]
+  }
+}

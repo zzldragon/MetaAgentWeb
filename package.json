@@ -1,0 +1,18 @@
+{
+  "name": "metaagent-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser designer for MetaAgent — canvas in the browser, code generated over the network.",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "open": "node src/server.ts --open",
+    "dev": "node --watch src/server.ts",
+    "test": "node --test",
+    "schema": "node scripts/schema.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

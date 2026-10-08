@@ -1,0 +1,290 @@
+/* MetaAgent web designer.
+ *
+ * The canvas is DARK and the panels are light, on purpose. MetaAgent's node palette is
+ * Material 100/200 pastels (mean luminance 0.79). On the desktop they fill a node body
+ * and read beautifully; used as thin accents on a pale page they vanish, which is why
+ * the first version looked washed out and empty. A dark workspace gives the white nodes
+ * somewhere to sit and lets a pale palette register as colour again.
+ *
+ * Panels stay light: that is where the reading and the form-filling happen.
+ */
+:root {
+  --canvas: #131B2E;
+  --canvas-grid: #24304A;
+  --chrome: #0E1626;
+  --chrome-ink: #E6EDF7;
+  --chrome-muted: #8CA0BF;
+  --chrome-line: #2A374F;
+  --chrome-hover: #1C2740;
+  --chrome-btn: #1B2640;
+  --chrome-btn-hi: #223050;
+
+  --panel: #FFFFFF;
+  --panel-2: #F6F8FC;
+  --ink: #16233D;
+  --muted: #64748B;
+  --border: #E2E8F0;
+
+  --accent: #2563EB;
+  --accent-hi: #1D4ED8;
+  --err: #DC2626;
+  --warn: #B45309;
+  --shadow: 0 1px 2px rgba(9,14,26,.06), 0 4px 12px rgba(9,14,26,.06);
+}
+
+* { box-sizing: border-box; }
+
+/* `hidden` is only a user-agent rule, so ANY author rule that sets `display` beats it.
+   `.hint` sets `display: grid` and the empty-canvas overlay stayed on top of a graph
+   with five nodes in it. Explicit here, closing the whole class of bug. */
+[hidden] { display: none !important; }
+
+html, body {
+  height: 100%; margin: 0;
+  font: 13px/1.5 "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--ink); background: var(--canvas);
+}
+body { display: flex; flex-direction: column; }
+
+/* ── top bar ─────────────────────────────────────────────────────────────── */
+.bar {
+  display: flex; align-items: center; gap: 8px; padding: 9px 14px;
+  background: var(--chrome); color: var(--chrome-ink); border-bottom: 1px solid #000;
+}
+.brand { font-weight: 700; letter-spacing: .3px; color: #fff; }
+.brand::before {
+  content: ""; display: inline-block; width: 9px; height: 9px; margin-right: 8px;
+  border-radius: 2px; background: var(--accent); transform: rotate(45deg);
+}
+.spacer { flex: 1; }
+.sep { width: 1px; height: 20px; background: var(--chrome-line); }
+.name {
+  width: 230px; padding: 5px 9px; font: inherit;
+  border: 1px solid var(--chrome-line); border-radius: 6px;
+  background: #1A2438; color: var(--chrome-ink);
+}
+.name::placeholder { color: var(--chrome-muted); }
+
+button {
+  font: inherit; padding: 5px 12px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--panel); color: var(--ink);
+  transition: background .12s, border-color .12s;
+}
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .45; cursor: default; }
+.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.primary:hover:not(:disabled) { background: var(--accent-hi); }
+.bar .ghost { background: transparent; border-color: transparent; color: var(--chrome-ink); }
+.bar .ghost:hover:not(:disabled) { background: var(--chrome-hover); border-color: var(--chrome-line); }
+.pick select {
+  font: inherit; padding: 5px 7px; border-radius: 6px;
+  border: 1px solid var(--chrome-line); background: #1A2438; color: var(--chrome-ink);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* ── layout ──────────────────────────────────────────────────────────────── */
+main { flex: 1; display: grid; grid-template-columns: 214px 1fr 336px; min-height: 0; }
+.panel { background: var(--panel); overflow: auto; }
+.palette { border-right: 1px solid var(--border); padding: 9px; }
+.inspector { border-left: 1px solid var(--border); display: flex; flex-direction: column; }
+.search {
+  width: 100%; padding: 6px 9px; margin-bottom: 9px; font: inherit;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--panel-2);
+}
+
+/* ── palette ─────────────────────────────────────────────────────────────── */
+.group > summary {
+  cursor: pointer; padding: 5px 2px; font-weight: 600; font-size: 11px;
+  letter-spacing: .4px; text-transform: uppercase; color: var(--muted); list-style: none;
+}
+.group > summary::-webkit-details-marker { display: none; }
+.group > summary::before { content: "\25B8  "; }
+.group[open] > summary::before { content: "\25BE  "; }
+.chip-node {
+  display: flex; align-items: center; gap: 8px; padding: 5px 8px; margin: 3px 0;
+  border: 1px solid var(--border); border-radius: 7px; background: var(--panel);
+  cursor: grab; user-select: none;
+  transition: border-color .12s, background .12s, transform .06s;
+}
+.chip-node:hover { border-color: var(--accent); background: var(--panel-2); }
+.chip-node:active { transform: scale(.98); }
+/* The swatch carries the DERIVED accent, not the raw pastel: a 0.79-luminance dot on
+   white is not a swatch, it is a smudge. */
+.chip-node .swatch {
+  width: 10px; height: 10px; border-radius: 3px; flex: none;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.05);
+}
+
+/* ── canvas ──────────────────────────────────────────────────────────────── */
+.canvas-wrap { position: relative; min-width: 0; background: var(--canvas); }
+#canvas { width: 100%; height: 100%; display: block; }
+#grid circle { fill: var(--canvas-grid); }
+#arrow path { fill: #7B8DAE; }
+.node path.body {
+  fill: var(--panel); stroke-width: 1.5;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.35));
+}
+.node.sel path.body { stroke: var(--accent) !important; stroke-width: 2.5; }
+/* An unfinished node, not a broken one: amber and dashed rather than error red, since a
+   node dropped two seconds ago has not done anything wrong yet. */
+.node.bad path.body { stroke: #F59E0B !important; stroke-dasharray: 5 3; }
+.node.bad.sel path.body { stroke: var(--accent) !important; stroke-dasharray: none; }
+.node rect.tag { rx: 2; }
+.node path.tint { opacity: .17; stroke: none; pointer-events: none; }
+.node text { font: 12px "Segoe UI", system-ui, sans-serif; fill: var(--ink); }
+.node text.name { font-weight: 600; }
+.node text.kind { font-size: 10px; fill: var(--muted); }
+.node .port { fill: var(--panel); stroke: #94A3B8; stroke-width: 1.5; cursor: crosshair; }
+.node .port:hover { fill: var(--accent); stroke: var(--accent); }
+.node { cursor: grab; }
+.node.dragging { cursor: grabbing; }
+.edge { fill: none; stroke: #7B8DAE; stroke-width: 2; marker-end: url(#arrow); }
+.edge.sel { stroke: #60A5FA; stroke-width: 2.5; }
+.edge-hit { fill: none; stroke: transparent; stroke-width: 14; cursor: pointer; }
+.linking { fill: none; stroke: #60A5FA; stroke-width: 2; stroke-dasharray: 5 4; }
+
+/* ── empty state ─────────────────────────────────────────────────────────── */
+.hint {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  pointer-events: none; padding: 24px;
+}
+.hint .card {
+  pointer-events: auto; text-align: center; max-width: 460px; color: var(--chrome-muted);
+}
+.hint h2 { margin: 0 0 7px; font-size: 17px; font-weight: 600; color: var(--chrome-ink); }
+.hint p { margin: 0 0 18px; font-size: 13px; line-height: 1.65; }
+.hint kbd {
+  background: #1F2A40; border: 1px solid #2E3A54; border-bottom-width: 2px;
+  border-radius: 4px; padding: 1px 5px; font: 11px Consolas, monospace;
+  color: var(--chrome-ink);
+}
+.starts { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; }
+.starts button {
+  background: var(--chrome-btn); border-color: #2C3A56; color: var(--chrome-ink);
+  padding: 9px 15px; border-radius: 8px; text-align: left; line-height: 1.35;
+}
+.starts button:hover { background: var(--chrome-btn-hi); border-color: var(--accent); }
+.starts .lede { display: block; font-weight: 600; }
+.starts .sub { display: block; font-size: 11px; color: var(--chrome-muted); margin-top: 2px; }
+.zoom { position: absolute; right: 14px; bottom: 14px; display: flex; gap: 5px; }
+.zoom button {
+  background: var(--chrome-btn); border-color: #2C3A56; color: var(--chrome-ink);
+  padding: 5px 10px;
+}
+.zoom button:hover { background: var(--chrome-btn-hi); border-color: var(--accent); }
+
+/* ── inspector ───────────────────────────────────────────────────────────── */
+.tabs { display: flex; border-bottom: 1px solid var(--border); flex: none; }
+.tab {
+  flex: 1; border: none; border-radius: 0; background: transparent;
+  padding: 9px; color: var(--muted); border-bottom: 2px solid transparent;
+}
+.tab.on { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.tab-body { padding: 11px; overflow: auto; flex: 1; }
+.field { margin-bottom: 10px; }
+.field label {
+  display: block; font-size: 11px; font-weight: 600; color: var(--muted); margin-bottom: 3px;
+}
+.field input[type=text], .field input[type=number], .field input[type=password],
+.field select, .field textarea {
+  width: 100%; padding: 6px 8px; font: inherit;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--panel);
+  color: var(--ink);
+}
+.field textarea { min-height: 64px; resize: vertical; font-family: Consolas, monospace; }
+.field.row { display: flex; align-items: center; gap: 8px; }
+.field.row label { margin: 0; font-size: 12px; font-weight: 400; color: var(--ink); }
+.field .why { font-size: 11px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+.section > summary {
+  cursor: pointer; font-weight: 600; color: var(--muted); font-size: 11px;
+  letter-spacing: .3px; text-transform: uppercase;
+  padding: 8px 0; border-top: 1px solid var(--border); margin-top: 10px;
+}
+.empty { color: var(--muted); text-align: center; padding: 26px 10px; }
+.issue { padding: 8px 10px; border-radius: 7px; margin-bottom: 7px; font-size: 12px; line-height: 1.5; }
+.issue.err  { background: #FEF2F2; color: #991B1B; border: 1px solid #FECACA; }
+.issue.warn { background: #FFFBEB; color: #92400E; border: 1px solid #FDE68A; }
+.issue.ok   { background: #F0FDF4; color: #166534; border: 1px solid #BBF7D0; }
+.pill {
+  display: none; min-width: 17px; padding: 0 6px; border-radius: 9px;
+  background: var(--err); color: #fff; font-size: 10px; line-height: 16px; font-weight: 700;
+}
+.pill.on { display: inline-block; }
+.pill.warn { background: var(--warn); }
+.picker {
+  max-height: 210px; overflow: auto; border: 1px solid var(--border);
+  border-radius: 6px; padding: 5px 7px; background: var(--panel-2);
+}
+.picker .field.row { margin-bottom: 3px; }
+.picker label { font-family: Consolas, monospace; font-size: 11px; }
+
+/* ── status bar ──────────────────────────────────────────────────────────── */
+.status {
+  display: flex; align-items: center; gap: 11px; padding: 6px 14px;
+  background: var(--chrome); color: var(--chrome-muted);
+  border-top: 1px solid #000; font-size: 12px;
+}
+.status .chip {
+  padding: 1px 9px; border-radius: 10px; font-weight: 600;
+  background: var(--chrome-btn); border: 1px solid #2C3A56; color: var(--chrome-ink);
+}
+.muted { color: var(--chrome-muted); }
+
+/* ── dialog ──────────────────────────────────────────────────────────────── */
+dialog {
+  border: 1px solid var(--border); border-radius: 10px; padding: 0;
+  color: var(--ink); background: var(--panel); min-width: 420px; max-width: 640px;
+  box-shadow: var(--shadow);
+}
+dialog::backdrop { background: rgba(9,14,26,.55); }
+#dlg-body { padding: 18px 20px; }
+#dlg-body h3 { margin: 0 0 12px; font-size: 15px; }
+#dlg-body .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+.list { max-height: 300px; overflow: auto; margin: 10px 0; }
+.list .item {
+  padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px;
+  margin-bottom: 6px; cursor: pointer; display: flex; gap: 9px; align-items: baseline;
+}
+.list .item:hover { border-color: var(--accent); background: var(--panel-2); }
+.list .item .when { margin-left: auto; color: var(--muted); font-size: 11px; }
+code {
+  background: var(--panel-2); border: 1px solid var(--border);
+  padding: 0 4px; border-radius: 3px; font-size: 11px;
+}
+.runout {
+  max-height: 340px; overflow: auto; margin: 12px 0 0; padding: 10px 12px;
+  border-radius: 7px; background: #0B1220; color: #D6E2F5;
+  font: 12px/1.5 Consolas, monospace; white-space: pre-wrap; word-break: break-word;
+}
+.reject { border-color: #FCA5A5; color: var(--err); }
+
+/* Graph-settings dialog */
+.gs-body { padding: 12px 2px 2px; max-height: 55vh; overflow: auto; }
+.gs-body .state-row textarea {
+  width: 100%; min-height: 74px; margin-top: 6px; resize: vertical;
+  font: 11px/1.45 Consolas, monospace;
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 7px;
+  background: var(--panel); color: var(--ink);
+}
+#gs-tabs { margin-bottom: 0; }
+
+/* ── maximisable dialogs ─────────────────────────────────────────────────── */
+.dlg-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.dlg-head h3 { margin: 0; flex: 1; cursor: default; user-select: none; }
+.dlg-head .tiny { font-size: 15px; line-height: 1; padding: 3px 9px; }
+
+/* A tall dialog is a flex column so its transcript takes the LEFTOVER height. Without
+   this, maximising gives you a big window whose content still stops a third of the way
+   down, which is worse than not offering it. */
+dialog.tall { display: flex; }
+dialog.tall #dlg-body { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+dialog.tall .runout { flex: 1; max-height: none; min-height: 180px; }
+dialog.tall .list { flex: none; }
+
+dialog.wide {
+  width: 94vw; max-width: 94vw; height: 92vh;
+  /* The centring a <dialog> does by default is computed from its natural size, so a
+     dialog resized after opening drifts off-centre. Pinning both insets re-centres it. */
+  inset: 4vh auto auto 3vw; margin: 0;
+}
+dialog.wide #dlg-body { height: 100%; }
